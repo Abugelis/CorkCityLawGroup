@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+        <meta name="description" content="A responsive law firm website built with modern HTML, CSS, and JavaScript, featuring a structured layout, accessible navigation, and clean design.">
+        <!-- Open Graph / Social Preview -->
+        <meta property="og:title" content="Cork City Law">
+        <meta property="og:description" content="A responsive law firm website built with modern HTML, CSS, and JavaScript, featuring a structured layout, accessible navigation, and clean design.">
+        <meta property="og:image" content="https://abugelis.github.io/Warner-SpencerLawFirm/assets/logos/logo.png">
+        <meta property="og:url" content="https://abugelis.github.io/Warner-SpencerLawFirm/">
+        <meta property="og:type" content="website">
+
+        <link rel="icon" type="image/x-icon" href="/assets/logos/corkLawLogo.ico">
+        
+        <title>Cork City Law</title>
+        
+        <script src="/js/main.js" defer></script>
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/home.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container header-inner">
+
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <img src="/assets/logos/corkLawLogoTransparent.png" alt="Cork City Law Logo">
+                </a>
+
+                <!-- Navigation -->
+                <nav class="nav" id="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link">Home</a></li>
+                        <li><a href="#" class="nav-link">About</a></li>
+                        <li><a href="#" class="nav-link">Team</a></li>
+                        <li><a href="#" class="nav-link">Practice</a></li>
+                        <li><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Toggle -->
+                <button 
+                    class="nav-toggle"
+                    aria-label="Toggle Menu"
+                    aria-expanded="false"
+                    aria-controls="main-nav">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+            </div>
+        </header>
+
+        <main>
+            <!-- Hero Section -->
+            <section class="container hero-section">
+                <div class="hero-content">
+                    <div class="hero-main">
+                        <h1>Trusted Legal Expertise in Cork City</h1>
+                        <p class="hero-main-text">
+                            Providing clear, strategic, and results-driven legal representation for individuals and businesses across Cork. 
+                            Our commitment is simple — protect your interests and deliver peace of mind.
+                        </p>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a class="btn btn-main" href="#">Book an appointment</a>
+                    </div>
+
+                    <div class="hero-info">
+                        <div class="hero-info-item">
+                            <div class="hero-info-icon">
+                                <svg viewBox="0 0 16 16" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="currentColor">
+                                    <path d="M13.6572 3.13573C13.8583 2.9465 14.175 2.95614 14.3643 3.15722C14.5535 3.35831 14.5438 3.675 14.3428 3.86425L5.84277 11.8642C5.64597 12.0494 5.33756 12.0446 5.14648 11.8535L1.64648 8.35351C1.45121 8.15824 1.45121 7.84174 1.64648 7.64647C1.84174 7.45121 2.15825 7.45121 2.35351 7.64647L5.50976 10.8027L13.6572 3.13573Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                
+                                <p>10+ Years of Experience</p>
+                            </div>
+                        </div>
+
+                        <div class="hero-info-item">
+                            <div class="hero-info-icon">
+                                <svg viewBox="0 0 16 16" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="currentColor">
+                                    <path d="M13.6572 3.13573C13.8583 2.9465 14.175 2.95614 14.3643 3.15722C14.5535 3.35831 14.5438 3.675 14.3428 3.86425L5.84277 11.8642C5.64597 12.0494 5.33756 12.0446 5.14648 11.8535L1.64648 8.35351C1.45121 8.15824 1.45121 7.84174 1.64648 7.64647C1.84174 7.45121 2.15825 7.45121 2.35351 7.64647L5.50976 10.8027L13.6572 3.13573Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p>Regulated by Legal Services Regulatory Authority</p>
+                            </div>
+                        </div>
+
+                        <div class="hero-info-item">
+                            <div class="hero-info-icon">
+                                <svg viewBox="0 0 16 16" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="currentColor">
+                                    <path d="M13.6572 3.13573C13.8583 2.9465 14.175 2.95614 14.3643 3.15722C14.5535 3.35831 14.5438 3.675 14.3428 3.86425L5.84277 11.8642C5.64597 12.0494 5.33756 12.0446 5.14648 11.8535L1.64648 8.35351C1.45121 8.15824 1.45121 7.84174 1.64648 7.64647C1.84174 7.45121 2.15825 7.45121 2.35351 7.64647L5.50976 10.8027L13.6572 3.13573Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p>Trusted by over 100 Clients</p>
+                            </div>
+                        </div>
+
+                        <div class="hero-info-item">
+                            <div class="hero-info-icon">
+                                <svg viewBox="0 0 16 16" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="currentColor">
+                                    <path d="M13.6572 3.13573C13.8583 2.9465 14.175 2.95614 14.3643 3.15722C14.5535 3.35831 14.5438 3.675 14.3428 3.86425L5.84277 11.8642C5.64597 12.0494 5.33756 12.0446 5.14648 11.8535L1.64648 8.35351C1.45121 8.15824 1.45121 7.84174 1.64648 7.64647C1.84174 7.45121 2.15825 7.45121 2.35351 7.64647L5.50976 10.8027L13.6572 3.13573Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <p>First Consultation Free</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- About Us Section -->
+            <section class="container about-us-section">
+                <div class="about-us-content fade-in">
+                    <div class="about-us-section-info">
+                        <h2>Expert Legal Solutions. Local Insight</h2>
+                        <p>
+                            At Cork City Law, we are a dedicated team of experienced solicitors committed to providing clear, strategic, and practical legal 
+                            guidance for both individuals and businesses. With a deep understanding of Irish law and a strong connection to the Cork community, 
+                            we take pride in offering solutions tailored to each client’s unique circumstances. Our practice spans a wide range of areas, 
+                            including corporate and commercial law, property and conveyancing, family law, and dispute resolution. We believe that effective 
+                            legal support goes beyond knowledge of the law—it requires careful listening, thoughtful planning, and a commitment to achieving the 
+                            best possible outcome for our clients. Every member of our team brings professionalism, integrity, and years of hands-on experience, 
+                            ensuring that you receive advice that is not only legally sound but also practical and actionable. At Cork City Law, we understand that 
+                            legal matters can be stressful and complex, which is why we strive to make the process as transparent, approachable, and supportive as 
+                            possible. Whether you are navigating a business transaction, managing a personal legal matter, or planning for the future, our goal is 
+                            to guide you with confidence, clarity, and expertise every step of the way.
+                        </p>
+                    </div>
+                    <div class="about-us-section-image">
+                        <img src="/assets/images/about-us-team.webp" alt="Legal Team">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Practice -->
+            <section class="container practice-section">
+                <div class="practice ">
+                    <h2 class="fade-in">Trusted Legal Counsel Across Key Areas</h2>
+                    <div class="practice-section-content">
+                        <div class="practice-card fade-in">
+                            <img src="/assets/images/family-law.webp" alt="Family Law">
+                            <div class="practice-card-info">
+                                <h3>Family Law</h3>
+                                <p>
+                                    We provide compassionate and discreet legal guidance across all areas of family law, including separation and divorce, child custody 
+                                    arrangements, maintenance, and related agreements. Our team offers clear, practical advice to help clients navigate sensitive matters 
+                                    with confidence while working toward fair and constructive outcomes.
+                                </p>
+                                <a class="btn" href="#">Read More &#8594</a>
+                            </div>
+                        </div>
+
+                        <div class="practice-card fade-in">
+                            <img src="/assets/images/property-law.webp" alt="Property Law">
+                            <div class="practice-card-info">
+                                <h3>Property Law</h3>
+                                <p>
+                                    We provide expert guidance on residential and commercial property transactions, including conveyancing, leases, and property disputes. 
+                                    Our team ensures every stage of the process is handled efficiently and transparently, protecting your interests and delivering peace of mind.
+                                </p>
+                                <a class="btn" href="#">Read More &#8594</a>
+                            </div>
+                        </div>
+
+                        <div class="practice-card fade-in">
+                            <img src="/assets/images/corporate-law.webp" alt="Corporate Law">
+                            <div class="practice-card-info">
+                                <h3>Corporate Law</h3>
+                                <p>
+                                    Our corporate law services support businesses at every stage of their development, from formation and governance to restructuring and compliance. 
+                                    We deliver strategic, commercially focused advice designed to help your organisation grow with confidence.
+                                </p>
+                                <a class="btn" href="#">Read More &#8594</a>
+                            </div>
+                        </div>
+
+                        <div class="practice-card fade-in">
+                            <img src="/assets/images/employment-law.webp" alt="Employment Law">
+                            <div class="practice-card-info">
+                                <h3>Employment Law</h3>
+                                <p>
+                                    We advise both employers and employees on a wide range of workplace matters, including contracts, disputes, disciplinary procedures, and redundancy. 
+                                    Our approach is practical and solution-driven, helping clients navigate complex employment issues with clarity and fairness.
+                                </p>
+                                <a class="btn" href="#">Read More &#8594</a>
+                            </div>
+                        </div>
+
+                        <div class="practice-card fade-in">
+                            <img src="/assets/images/commercial-law.webp" alt="Commercial Law">
+                            <div class="practice-card-info">
+                                <h3>Commercial Law</h3>
+                                <p>
+                                    We assist businesses with contracts, negotiations, regulatory matters, and commercial disputes. By combining legal expertise with commercial insight, 
+                                    we help our clients manage risk and seize opportunities in an evolving business landscape.
+                                </p>
+                                <a class="btn" href="#">Read More &#8594</a>
+                            </div>
+                        </div>
+
+                        <div class="practice-card fade-in">
+                            <img src="/assets/images/personal-injury.webp" alt="Personal Injury">
+                            <div class="practice-card-info">
+                                <h3>Personal Injury</h3>
+                                <p>
+                                    We represent clients in personal injury claims arising from accidents, workplace incidents, and negligence. With a compassionate and thorough approach, 
+                                    we work diligently to secure fair compensation while guiding you through every step of the legal process.
+                                </p>
+                                <a class="btn" href="#">Read More &#8594</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Testimonials-->
+            <section class="container testimonials-section">
+                <div class="testimonials-section fade-in">
+                    <h2>What Our Clients Say</h2>
+                    <div class="testimonials">
+                        <div class="testimonial-card">
+                            <p>
+                                <i>“Cork City Law guided me through a difficult family matter with compassion and clarity. I always felt supported and informed, and they achieved a fair outcome. 
+                                I couldn’t have asked for a better team.”</i>
+                            </p>
+                            <p class="testimonials-signature">— Siobhan M., Cork</p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <p>
+                                <i>“Our company relied on Cork City Law for a complex business transaction. Their attention to detail and practical advice made the process smooth and stress-free. 
+                                Highly professional and approachable.”</i>
+                            </p>
+                            <p class="testimonials-signature">— Liam O., Cork</p>
+                        </div>
+
+                        <div class="testimonial-card">
+                            <p>
+                                <i>“Buying our first home was overwhelming, but the team at Cork City Law handled everything efficiently and patiently. Their guidance made all the difference, and 
+                                we felt confident every step of the way.”</i>
+                            </p>
+                            <p class="testimonials-signature">— Aoife K., Cork</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Final CTA-->
+            <section class="container final-cta-section">
+                <div class="final-cta fade-in">
+                    <h2>Here to Help When You Need Us</h2>
+                    <p>
+                        Legal matters can be complex and stressful, but you don’t have to face them alone. Our team at Cork City Law is ready to listen, advise, and 
+                        guide you every step of the way. Contact us now for friendly, professional support.
+                    </p>
+                    <a class="btn btn-main" href="#">book an appointment</a>
+                </div>
+            </section>
+
+            <!-- Contact Form -->
+            <section class="container contact-section">
+                <div class="contact">
+                    <div class="contact-details fade-in">
+                        <h2>Contact Us</h2>
+                        <!-- Contact details  + icons -->
+                        <div class="contact-details-item">
+                            <div class="contact-details-icon">
+                                <svg viewBox="0 0 16 16" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="currentColor">
+                                    <path d="M8 1C11.3137 1 14 3.68629 14 7C14 9.87377 10.9031 13.016 9.15918 14.5576C8.49082 15.1484 7.50918 15.1484 6.84082 14.5576C5.09688 13.016 2 9.87377 2 7C2 3.68629 4.68629 1 8 1ZM8 2C5.23858 2 3 4.23858 3 7C3 8.10839 3.61436 9.39536 4.56934 10.6826C5.50328 11.9415 6.65741 13.0603 7.50391 13.8086C7.79391 14.0647 8.20609 14.0647 8.49609 13.8086C9.34259 13.0603 10.4967 11.9415 11.4307 10.6826C12.3856 9.39536 13 8.10839 13 7C13 4.23858 10.7614 2 8 2ZM8 4.75C9.24264 4.75 10.25 5.75736 10.25 7C10.25 8.24264 9.24264 9.25 8 9.25C6.75736 9.25 5.75 8.24264 5.75 7C5.75 5.75736 6.75736 4.75 8 4.75ZM8 5.75C7.30964 5.75 6.75 6.30964 6.75 7C6.75 7.69036 7.30964 8.25 8 8.25C8.69036 8.25 9.25 7.69036 9.25 7C9.25 6.30964 8.69036 5.75 8 5.75Z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details-flex">
+                                <p class="contact-details-label">address</p>
+                                <p class="contact-details-info">123 Parnell Street, Cork</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-details-item">
+                            <div class="contact-details-icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="none" viewBox="0 0 24 24" 
+                                    stroke-width="1.5" stroke="currentColor" 
+                                    aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details-flex">
+                                <p class="contact-details-label">phone</p>
+                                <p class="contact-details-info">04 123 4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-details-item">
+                            <div class="contact-details-icon">
+                                <svg 
+                                    viewBox="0 0 16 16" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="currentColor">
+                                    <path d="M13 3H3C1.897 3 1 3.897 1 5V11C1 12.103 1.897 13 3 13H13C14.103 13 15 12.103 15 11V5C15 3.897 14.103 3 13 3ZM3 4H13C13.552 4 14 4.449 14 5V5.201L8 8.432L2 5.201V5C2 4.449 2.448 4 3 4ZM13 12H3C2.448 12 2 11.552 2 11V6.337L7.763 9.44C7.837 9.48 7.919 9.5 8 9.5C8.081 9.5 8.163 9.48 8.237 9.44L14 6.337V11C14 11.552 13.552 12 13 12Z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details-flex">
+                                <p class="contact-details-label">email</p>
+                                <p class="contact-details-info">example@cork-city-law.ie</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-details-item">
+                            <div class="contact-details-icon">
+                                <svg 
+                                    viewBox="0 0 15 15" 
+                                    fill="none" 
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.49933 0.877014C11.1567 0.877014 14.122 3.84175 14.1224 7.49908C14.1224 11.1567 11.157 14.1221 7.49933 14.1221C3.84199 14.1217 0.877258 11.1565 0.877258 7.49908C0.877669 3.842 3.84225 0.877426 7.49933 0.877014ZM7.49933 1.82623C4.36692 1.82664 1.82689 4.36667 1.82648 7.49908C1.82648 10.6318 4.36667 13.1715 7.49933 13.1719C10.6323 13.1719 13.1722 10.6321 13.1722 7.49908C13.1718 4.36642 10.6321 1.82623 7.49933 1.82623ZM7.50031 4.00006C7.77631 4.00023 8.00031 4.22402 8.00031 4.50006V7.29303L9.85382 9.14655L9.91827 9.22467C10.0463 9.41868 10.0245 9.68276 9.85382 9.85358C9.68303 10.0244 9.41897 10.046 9.22491 9.91803L9.14679 9.85358L7.14679 7.85358C7.05303 7.75982 7.00032 7.63265 7.00031 7.50006V4.50006C7.00031 4.22392 7.22416 4.00006 7.50031 4.00006Z" 
+                                    fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details-flex">
+                                <p class="contact-details-label">office hours</p>
+                                <p class="contact-details-info">monday-friday 8am-5pm</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-form fade-in">
+                        <form class="form" autocomplete="on">
+                            <h3>Send Us a Message</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">First Name</label>
+                                    <input name="first_name" type="text" id="name" autocomplete="given-name" class="form-input" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="surname">Last Name</label>
+                                    <input name="last_name" type="text" id="surname" autocomplete="family-name" class="form-input" required="">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input name="email" type="email" id="email" class="form-input" autocomplete="email" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="phone">Phone</label>
+                                    <input name="phone" type="tel" id="phone" class="form-input" autocomplete="tel" required="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="service">Service Required</label>
+                                <select name="service" class="form-select" id="service" required="">
+                                    <option value="">Please select...</option>
+                                    <option value="family">Family Law</option>
+                                    <option value="property">Property Law</option>
+                                    <option value="corporate">Corporate Law</option>
+                                    <option value="employment">Employment Law</option>
+                                    <option value="injury">Personal Injury</option>
+                                    <option value="commercial">Commercial Law</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">Your Message</label>
+                                <textarea name="message" class="form-textarea" id="message" required="" placeholder="Please briefly describe your legal matter..."></textarea>
+                            </div>
+                            <button id="form-btn" type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="container footer fade-in">
+            <div class="main-footer">
+                <div class="footer-branding">
+                    <img src="/assets/logos/corkLawLogoTransparent.png" alt="">
+                    <p>Delivering reliable legal expertise across Cork, Cork City Law is committed to protecting your interests with clarity and professionalism.</p>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <div>
+                        <ul class="footer-service-list">
+                            <li class="footer-service-item"><a href="#">Family Law</a></li>
+                            <li class="footer-service-item"><a href="#">Property Law</a></li>
+                            <li class="footer-service-item"><a href="#">Corporate Law</a></li>
+                            <li class="footer-service-item"><a href="#">Employment Law</a></li>
+                            <li class="footer-service-item"><a href="#">Personal Injury</a></li>
+                            <li class="footer-service-item"><a href="#">Commercial Law</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-quick-links">
+                    <h4>Quick Links</h4>
+                    <div>
+                        <ul class="footer-quick-links-list">
+                            <li class="footer-service-item"><a href="#">Home</a></li>
+                            <li class="footer-service-item"><a href="#">About</a></li>
+                            <li class="footer-service-item"><a href="#">Team</a></li>
+                            <li class="footer-service-item"><a href="#">Practice</a></li>
+                            <li class="footer-service-item"><a href="#">Contact</a></li>
+                            <li class="footer-service-item"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-signature">
+                <p>EG Web Dev | <i>© 2026 All Rights Reserverd</i></p>
+            </div>
+        </footer>
+    </body>
+</html>
