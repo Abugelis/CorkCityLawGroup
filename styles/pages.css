@@ -270,7 +270,7 @@
 .contact-page-header-section {
     background-image: 
         linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.65)),
-        url("/assets/images/contact-page-bg.webp");
+        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/contact-page-bg.webp");
 
     background-size: cover;
     background-position: center;
