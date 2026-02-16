@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+        <meta name="description" content="A responsive law firm website built with modern HTML, CSS, and JavaScript, featuring a structured layout, accessible navigation, and clean design.">
+        <!-- Open Graph / Social Preview -->
+        <meta property="og:title" content="Cork City Law">
+        <meta property="og:description" content="A responsive law firm website built with modern HTML, CSS, and JavaScript, featuring a structured layout, accessible navigation, and clean design.">
+        <meta property="og:image" content="https://abugelis.github.io/Warner-SpencerLawFirm/assets/logos/logo.png">
+        <meta property="og:url" content="https://abugelis.github.io/Warner-SpencerLawFirm/">
+        <meta property="og:type" content="website">
+
+        <link rel="icon" type="image/x-icon" href="/assets/logos/corkLawLogo.ico">
+        
+        <title>Cork City Law</title>
+        
+        <script src="/js/main.js" defer></script>
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/pages.css">
+        <link rel="stylesheet" href="/styles/home.css">
+        
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container header-inner">
+
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <img src="/assets/logos/corkLawLogoTransparent.png" alt="Cork City Law Logo">
+                </a>
+
+                <!-- Navigation -->
+                <nav class="nav" id="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link">Home</a></li>
+                        <li><a href="#" class="nav-link">About</a></li>
+                        <li><a href="#" class="nav-link">Team</a></li>
+                        <li><a href="#" class="nav-link">Practice</a></li>
+                        <li><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Toggle -->
+                <button 
+                    class="nav-toggle"
+                    aria-label="Toggle Menu"
+                    aria-expanded="false"
+                    aria-controls="main-nav">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+            </div>
+        </header>
+
+        <main>
+            <!-- Practice page header -->
+            <section class="container contact-page-header-section">
+                <div class="contact-page-header">
+                    <h1>Speak with a solicitor today</h1>
+                    <p>Comprehensive, client-focused legal services across all major areas of law.</p>
+                </div>
+            </section>
+            <!-- Urgent contact strip -->
+            <section class="container urgent-contact-strip">
+                <div class="urgent-contact">
+                    <h2>Urgent? Call us now</h2>
+                    <div class="urgent-contact-details">
+                        <svg 
+                            xmlns="http://www.w3.org/2000/svg" 
+                            fill="none" viewBox="0 0 24 24" 
+                            stroke-width="1.5" stroke="currentColor" 
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                        </svg>
+                        <a href="tel:04 123 4567">04 123 4567</a>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Form -->
+            <section class="container contact-section">
+                <div class="contact">
+                    <div class="contact-details fade-in">
+                        <h2>Contact Us</h2>
+                        <!-- Contact details  + icons -->
+                        <div class="contact-details-item">
+                            <div class="contact-details-icon">
+                                <svg viewBox="0 0 16 16" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="currentColor">
+                                    <path d="M8 1C11.3137 1 14 3.68629 14 7C14 9.87377 10.9031 13.016 9.15918 14.5576C8.49082 15.1484 7.50918 15.1484 6.84082 14.5576C5.09688 13.016 2 9.87377 2 7C2 3.68629 4.68629 1 8 1ZM8 2C5.23858 2 3 4.23858 3 7C3 8.10839 3.61436 9.39536 4.56934 10.6826C5.50328 11.9415 6.65741 13.0603 7.50391 13.8086C7.79391 14.0647 8.20609 14.0647 8.49609 13.8086C9.34259 13.0603 10.4967 11.9415 11.4307 10.6826C12.3856 9.39536 13 8.10839 13 7C13 4.23858 10.7614 2 8 2ZM8 4.75C9.24264 4.75 10.25 5.75736 10.25 7C10.25 8.24264 9.24264 9.25 8 9.25C6.75736 9.25 5.75 8.24264 5.75 7C5.75 5.75736 6.75736 4.75 8 4.75ZM8 5.75C7.30964 5.75 6.75 6.30964 6.75 7C6.75 7.69036 7.30964 8.25 8 8.25C8.69036 8.25 9.25 7.69036 9.25 7C9.25 6.30964 8.69036 5.75 8 5.75Z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details-flex">
+                                <p class="contact-details-label">address</p>
+                                <p class="contact-details-info">123 Parnell Street, Cork</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-details-item">
+                            <div class="contact-details-icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="none" viewBox="0 0 24 24" 
+                                    stroke-width="1.5" stroke="currentColor" 
+                                    aria-hidden="true" data-slot="icon">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details-flex">
+                                <p class="contact-details-label">phone</p>
+                                <p class="contact-details-info">04 123 4567</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-details-item">
+                            <div class="contact-details-icon">
+                                <svg 
+                                    viewBox="0 0 16 16" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="currentColor">
+                                    <path d="M13 3H3C1.897 3 1 3.897 1 5V11C1 12.103 1.897 13 3 13H13C14.103 13 15 12.103 15 11V5C15 3.897 14.103 3 13 3ZM3 4H13C13.552 4 14 4.449 14 5V5.201L8 8.432L2 5.201V5C2 4.449 2.448 4 3 4ZM13 12H3C2.448 12 2 11.552 2 11V6.337L7.763 9.44C7.837 9.48 7.919 9.5 8 9.5C8.081 9.5 8.163 9.48 8.237 9.44L14 6.337V11C14 11.552 13.552 12 13 12Z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details-flex">
+                                <p class="contact-details-label">email</p>
+                                <p class="contact-details-info">example@cork-city-law.ie</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-details-item">
+                            <div class="contact-details-icon">
+                                <svg 
+                                    viewBox="0 0 15 15" 
+                                    fill="none" 
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.49933 0.877014C11.1567 0.877014 14.122 3.84175 14.1224 7.49908C14.1224 11.1567 11.157 14.1221 7.49933 14.1221C3.84199 14.1217 0.877258 11.1565 0.877258 7.49908C0.877669 3.842 3.84225 0.877426 7.49933 0.877014ZM7.49933 1.82623C4.36692 1.82664 1.82689 4.36667 1.82648 7.49908C1.82648 10.6318 4.36667 13.1715 7.49933 13.1719C10.6323 13.1719 13.1722 10.6321 13.1722 7.49908C13.1718 4.36642 10.6321 1.82623 7.49933 1.82623ZM7.50031 4.00006C7.77631 4.00023 8.00031 4.22402 8.00031 4.50006V7.29303L9.85382 9.14655L9.91827 9.22467C10.0463 9.41868 10.0245 9.68276 9.85382 9.85358C9.68303 10.0244 9.41897 10.046 9.22491 9.91803L9.14679 9.85358L7.14679 7.85358C7.05303 7.75982 7.00032 7.63265 7.00031 7.50006V4.50006C7.00031 4.22392 7.22416 4.00006 7.50031 4.00006Z" 
+                                    fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details-flex">
+                                <p class="contact-details-label">office hours</p>
+                                <p class="contact-details-info">monday-friday 8am-5pm</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="contact-form fade-in">
+                        <form class="form" autocomplete="on">
+                            <h3>Send Us a Message</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="name">First Name</label>
+                                    <input name="first_name" type="text" id="name" autocomplete="given-name" class="form-input" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="surname">Last Name</label>
+                                    <input name="last_name" type="text" id="surname" autocomplete="family-name" class="form-input" required="">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label class="form-label" for="email">Email</label>
+                                    <input name="email" type="email" id="email" class="form-input" autocomplete="email" required="">
+                                </div>
+                                <div class="form-group">
+                                    <label class="form-label" for="phone">Phone</label>
+                                    <input name="phone" type="tel" id="phone" class="form-input" autocomplete="tel" required="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="service">Service Required</label>
+                                <select name="service" class="form-select" id="service" required="">
+                                    <option value="">Please select...</option>
+                                    <option value="family">Family Law</option>
+                                    <option value="property">Property Law</option>
+                                    <option value="corporate">Corporate Law</option>
+                                    <option value="employment">Employment Law</option>
+                                    <option value="injury">Personal Injury</option>
+                                    <option value="commercial">Commercial Law</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="message">Your Message</label>
+                                <textarea name="message" class="form-textarea" id="message" required="" placeholder="Please briefly describe your legal matter..."></textarea>
+                            </div>
+                            <button id="form-btn" type="submit" class="btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- What happens next section -->
+            <section class="container what-happens-next-section">
+                <div class="what-happens-next">
+                    <div class="what-happens-next-header fade-in">
+                        <h2>What happens next?</h2>
+                        <p>Once you submit your enquiry, our team will guide you through the next steps clearly and confidentially.</p>
+                    </div>
+                    <div class="what-happens-next-grid">
+                        <!-- Item 1 -->
+                        <div class="what-happens-next-grid-item fade-in">
+                            <div class="what-happens-next-icon">
+                                <svg 
+                                    viewBox="0 0 15 15" 
+                                    fill="none" 
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.5 2C8.98528 2 11 4.01472 11 6.5C11 7.56246 10.6304 8.5378 10.0146 9.30762L12.8535 12.1465L12.918 12.2246C13.0461 12.4187 13.0244 12.6827 12.8535 12.8535C12.6827 13.0244 12.4187 13.0461 12.2246 12.918L12.1465 12.8535L9.30762 10.0146C8.5378 10.6304 7.56246 11 6.5 11C4.01472 11 2 8.98528 2 6.5C2 4.01472 4.01472 2 6.5 2ZM6.5 3C4.567 3 3 4.567 3 6.5C3 8.433 4.567 10 6.5 10C8.433 10 10 8.433 10 6.5C10 4.567 8.433 3 6.5 3Z" 
+                                    fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <h3>1. We review your enquiry</h3>
+                            <p>We assess the details you provide to understand your situation.</p>
+                        </div>
+                        <!-- Item 2 -->
+                        <div class="what-happens-next-grid-item fade-in">
+                            <div class="what-happens-next-icon">
+                                <svg 
+                                    viewBox="0 0 16 16" 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="currentColor">
+                                    <path d="M13 3H3C1.897 3 1 3.897 1 5V11C1 12.103 1.897 13 3 13H13C14.103 13 15 12.103 15 11V5C15 3.897 14.103 3 13 3ZM3 4H13C13.552 4 14 4.449 14 5V5.201L8 8.432L2 5.201V5C2 4.449 2.448 4 3 4ZM13 12H3C2.448 12 2 11.552 2 11V6.337L7.763 9.44C7.837 9.48 7.919 9.5 8 9.5C8.081 9.5 8.163 9.48 8.237 9.44L14 6.337V11C14 11.552 13.552 12 13 12Z"/>
+                                </svg>
+                            </div>
+                            <h3>2. We contact you</h3>
+                            <p>A solicitor will get in touch within 24 hours to discuss your matter.</p>
+                        </div>
+                        <!-- Item 3 -->
+                        <div class="what-happens-next-grid-item fade-in">
+                            <div class="what-happens-next-icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    fill="none" 
+                                    viewBox="0 0 24 24" 
+                                    stroke-width="1.5" 
+                                    stroke="currentColor" 
+                                    aria-hidden="true" 
+                                    data-slot="icon">
+                                    <path 
+                                    stroke-linecap="round" 
+                                    stroke-linejoin="round" 
+                                    d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+                                </svg>
+                            </div>
+                            <h3>3. We discuss your options</h3>
+                            <p>We provide clear, practical advice tailored to your case.</p>
+                        </div>
+                        <!-- Item 4 -->
+                        <div class="what-happens-next-grid-item fade-in">
+                            <div class="what-happens-next-icon">
+                                <svg 
+                                    xmlns="http://www.w3.org/2000/svg" 
+                                    enable-background="new 0 0 24 24" 
+                                    viewBox="0 0 24 24" 
+                                    fill="currentColor">
+                                    <g>
+                                        <rect fill="none" height="24" width="24"/>
+                                    </g>
+                                    <g>
+                                        <path d="M12.22,19.85c-0.18,0.18-0.5,0.21-0.71,0c-0.18-0.18-0.21-0.5,0-0.71l3.39-3.39l-1.41-1.41l-3.39,3.39 c-0.19,0.2-0.51,0.19-0.71,0c-0.21-0.21-0.18-0.53,0-0.71l3.39-3.39l-1.41-1.41l-3.39,3.39c-0.18,0.18-0.5,0.21-0.71,0 c-0.19-0.19-0.19-0.51,0-0.71l3.39-3.39L9.24,10.1l-3.39,3.39c-0.18,0.18-0.5,0.21-0.71,0c-0.19-0.2-0.19-0.51,0-0.71L9.52,8.4 l1.87,1.86c0.95,0.95,2.59,0.94,3.54,0c0.98-0.98,0.98-2.56,0-3.54l-1.86-1.86l0.28-0.28c0.78-0.78,2.05-0.78,2.83,0l4.24,4.24 c0.78,0.78,0.78,2.05,0,2.83L12.22,19.85z M21.83,13.07c1.56-1.56,1.56-4.09,0-5.66l-4.24-4.24c-1.56-1.56-4.09-1.56-5.66,0 l-0.28,0.28l-0.28-0.28c-1.56-1.56-4.09-1.56-5.66,0L2.17,6.71c-1.42,1.42-1.55,3.63-0.4,5.19l1.45-1.45 C2.83,9.7,2.96,8.75,3.59,8.12l3.54-3.54c0.78-0.78,2.05-0.78,2.83,0l3.56,3.56c0.18,0.18,0.21,0.5,0,0.71 c-0.21,0.21-0.53,0.18-0.71,0L9.52,5.57l-5.8,5.79c-0.98,0.97-0.98,2.56,0,3.54c0.39,0.39,0.89,0.63,1.42,0.7 c0.07,0.52,0.3,1.02,0.7,1.42c0.4,0.4,0.9,0.63,1.42,0.7c0.07,0.52,0.3,1.02,0.7,1.42c0.4,0.4,0.9,0.63,1.42,0.7 c0.07,0.54,0.31,1.03,0.7,1.42c0.47,0.47,1.1,0.73,1.77,0.73c0.67,0,1.3-0.26,1.77-0.73L21.83,13.07z"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <h3>4. You decide how to proceed</h3>
+                            <p>There is no obligation — we move forward only when you’re ready.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="container faq-section">
+                <div class="faq">
+                    <h2 class="fade-in">FAQ</h2>
+                    <div class="faq-flex">
+                        <div class="faq-item fade-in">
+                            <button class="faq-question">
+                                How quickly will I be contacted?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>A solicitor will contact you within 24 hours of your enquiry.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item fade-in">
+                            <button class="faq-question">
+                                Is my enquiry confidential?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, all enquiries are handled in strict confidence.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item fade-in">
+                            <button class="faq-question">
+                                What happens next after I submit a form?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We review your enquiry, then a solicitor contacts you to discuss your case confidentially.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item fade-in">
+                            <button class="faq-question">
+                                Do you offer consultations online or only in person?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We offer both in-person consultations at our office and secure online consultations via video call.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item fade-in">
+                            <button class="faq-question">
+                                What documents should I prepare before my consultation?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>It depends on your case, but generally, any contracts, agreements, identification, or relevant correspondence is helpful.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item fade-in">
+                            <button class="faq-question">
+                                Do I need to pay upfront for legal advice?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>We offer a range of billing options. Initial consultations may be free or fixed-fee, depending on the service.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item fade-in">
+                            <button class="faq-question">
+                                How long does it usually take to resolve a case?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Case duration varies depending on complexity. Your solicitor will provide an estimated timeline after reviewing your case.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item fade-in">
+                            <button class="faq-question">
+                                Can you handle cases outside of Cork?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>Yes, we provide advice and representation to clients throughout Ireland.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item fade-in">
+                            <button class="faq-question">
+                                How do I know which solicitor is right for my case?
+                                <span class="faq-icon">+</span>
+                            </button>
+                            <div class="faq-answer">
+                                <p>You can review our team page to see each solicitor’s area of expertise and experience. We’ll match you with the solicitor best suited to your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="container footer fade-in">
+            <div class="main-footer">
+                <div class="footer-branding">
+                    <img src="/assets/logos/corkLawLogoTransparent.png" alt="">
+                    <p>Our team provides professional, discreet legal support across a range of matters. Reach out today to discuss your case with confidence.</p>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <div>
+                        <ul class="footer-service-list">
+                            <li class="footer-service-item"><a href="#">Family Law</a></li>
+                            <li class="footer-service-item"><a href="#">Property Law</a></li>
+                            <li class="footer-service-item"><a href="#">Corporate Law</a></li>
+                            <li class="footer-service-item"><a href="#">Employment Law</a></li>
+                            <li class="footer-service-item"><a href="#">Personal Injury</a></li>
+                            <li class="footer-service-item"><a href="#">Commercial Law</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-quick-links">
+                    <h4>Quick Links</h4>
+                    <div>
+                        <ul class="footer-quick-links-list">
+                            <li class="footer-service-item"><a href="#">Home</a></li>
+                            <li class="footer-service-item"><a href="#">About</a></li>
+                            <li class="footer-service-item"><a href="#">Team</a></li>
+                            <li class="footer-service-item"><a href="#">Practice</a></li>
+                            <li class="footer-service-item"><a href="#">Contact</a></li>
+                            <li class="footer-service-item"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-signature">
+                <p>EG Web Dev | <i>© 2026 All Rights Reserverd</i></p>
+            </div>
+        </footer>
+    </body>
+</html>
