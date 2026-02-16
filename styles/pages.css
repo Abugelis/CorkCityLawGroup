@@ -403,12 +403,14 @@
   padding: 1rem;
   font-size: 1rem;
   font-weight: bold;
+  font: inherit;
   background: none;
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #1E1E1E;
 }
 
 .faq-icon {
