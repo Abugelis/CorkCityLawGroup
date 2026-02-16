@@ -165,6 +165,105 @@
     color: #008080;
 }
 
+
+/* ----------------------- TEAM PAGE --------------------- */
+
+.team {
+    display: flex;
+    flex-direction: column;
+}
+
+.team-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.team-header-support {
+    font-weight: 500;
+}
+
+.team-info {
+    text-align: center;
+    padding-bottom: 2rem;
+}
+
+.team-grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    border: 1px solid #C0C0C0;
+    border-radius: 10px;
+
+    box-shadow: 1px 1px 10px #C0C0C0;
+}
+
+.team-card-label {
+    color: #008080;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.team-inner-card {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 350px;
+}
+
+.team-card-image img {
+    height: 250px;
+    width: auto;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-space {
+    padding: 0 1rem;
+}
+
+.team-card-contacts {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E1E1E;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 0.5rem 1rem;
+}
+
+.team-card-contacts a {
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.team-card-contacts a:hover {
+    color: #008080;
+}
+
+.team-card-contacts-info {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}
+
+.team-card-contacts-info svg {
+    height: 22px;
+    color: #008080;
+}
+
 /* ----------------- EDGE CASE: small mobile screens ----------------- */
 
 @media (max-width: 400px) { 
@@ -190,11 +289,52 @@
     .why-us-list {
         flex: 1;
     }
+
+    .team-inner-card {
+        flex-direction: row;
+        max-width: 700px;
+    }
+
+    .team-card-image img {
+        height: 240px;
+        width: 800px;
+        border-top-right-radius: 0;
+    }
+
+    .team-card {
+        gap: 0;
+    }
+
+    .card-space {
+        padding: 1rem;
+    }
+
 }
 
 /* ---------------------------- LAPTOP ------------------------------- */
 
 @media (min-width: 1024px) {
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-start;
+    }
+
+    .team-inner-card {
+        flex-direction: column;
+    }
+
+    .team-card-image img {
+        border-top-right-radius: 10px;
+    }
+
+    
+}
+
+/* ---------------------------- DESKTOP ------------------------------- */
+
+@media (min-width: 1440px) {
 
     .about-us-content {
         display: flex;
@@ -210,13 +350,9 @@
         flex: 1;
     }
 
-    
-
-}
-
-/* ---------------------------- DESKTOP ------------------------------- */
-
-@media (min-width: 1440px) {
+    .team-card-image img {
+        height: 320px;
+    }
 
 }
 
@@ -224,4 +360,21 @@
 
 @media (min-width: 1920px) { 
 
+    .why-us-header {
+        padding-left: 6rem;
+    }
+
+    .team-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .team-inner-card {
+        flex-direction: row;
+    }
+
+    .team-card-image img {
+        height: 300px;
+        width: 1200px;
+    }
 }

@@ -26,6 +26,10 @@ a:focus {
   outline-offset: 2px;
 }
 
+button {
+    cursor: pointer;
+}
+
 /* ---------------------------- FONTS ------------------------------- */
 
 @font-face {
@@ -111,6 +115,19 @@ ul, li {
 
 .container {
     padding: 3rem 1rem;
+}
+
+/* ----------------------- FADE IN ANIMATION --------------------- */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ---------------------------- BUTTONS ------------------------------- */

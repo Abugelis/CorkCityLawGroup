@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
+        <meta name="description" content="A responsive law firm website built with modern HTML, CSS, and JavaScript, featuring a structured layout, accessible navigation, and clean design.">
+        <!-- Open Graph / Social Preview -->
+        <meta property="og:title" content="Cork City Law">
+        <meta property="og:description" content="A responsive law firm website built with modern HTML, CSS, and JavaScript, featuring a structured layout, accessible navigation, and clean design.">
+        <meta property="og:image" content="https://abugelis.github.io/Warner-SpencerLawFirm/assets/logos/logo.png">
+        <meta property="og:url" content="https://abugelis.github.io/Warner-SpencerLawFirm/">
+        <meta property="og:type" content="website">
+
+        <link rel="icon" type="image/x-icon" href="/assets/logos/corkLawLogo.ico">
+        
+        <title>Cork City Law</title>
+        
+        <script src="/js/main.js" defer></script>
+        <link rel="stylesheet" href="/styles/base.css">
+        <link rel="stylesheet" href="/styles/pages.css">
+    </head>
+
+    <body>
+        <!-- Header -->
+        <header class="site-header">
+            <div class="container header-inner">
+
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <img src="/assets/logos/corkLawLogoTransparent.png" alt="Cork City Law Logo">
+                </a>
+
+                <!-- Navigation -->
+                <nav class="nav" id="main-nav">
+                    <ul class="nav-list">
+                        <li><a href="#" class="nav-link">Home</a></li>
+                        <li><a href="#" class="nav-link">About</a></li>
+                        <li><a href="#" class="nav-link">Team</a></li>
+                        <li><a href="#" class="nav-link">Practice</a></li>
+                        <li><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Mobile Toggle -->
+                <button 
+                    class="nav-toggle"
+                    aria-label="Toggle Menu"
+                    aria-expanded="false"
+                    aria-controls="main-nav">
+
+                    <svg xmlns="http://www.w3.org/2000/svg" 
+                        viewBox="0 0 24 24" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        stroke-width="2" 
+                        stroke-linecap="round" 
+                        stroke-linejoin="round">
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
+
+            </div>
+        </header>
+
+        <main>
+            <section class="container team-section">
+                <div class="team">
+                    <div class="team-header fade-in">
+                        <h1>Meet Our Legal Team</h1>
+                        <p class="team-header-support">Experienced, dedicated legal professionals serving clients across Cork and beyond.</p>
+                    </div>
+                    
+                    <p class="team-info fade-in">
+                        At Cork City Law, our solicitors combine experience, professionalism, and a client-focused approach to provide clear and practical legal 
+                        advice. Each member of our team is committed to delivering trusted guidance with integrity and care.
+                    </p>
+
+                    <div class="team-grid">
+                        <!-- Card 1-->
+                        <div class="team-card fade-in">
+                            <div class="team-inner-card">
+                                <div class="team-card-image">
+                                    <img src="/assets/images/uncropped-lawyer-1.webp" alt="Lawyer 1">
+                                </div>
+                                <div class="card-space">
+                                    <h4>Nora Staples</h4>
+                                    <p class="team-card-label">Solicitor</p>
+                                    <p>
+                                        Nora specialises in property law, probate, and commercial transactions. With over 12 years of experience advising clients across 
+                                        Cork, she is known for her clear communication and practical, results-driven approach.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="team-card-contacts card-space">
+                                <div class="team-card-contacts-info">
+                                    <svg 
+                                        viewBox="0 0 16 16" 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="currentColor">
+                                        <path d="M13 3H3C1.897 3 1 3.897 1 5V11C1 12.103 1.897 13 3 13H13C14.103 13 15 12.103 15 11V5C15 3.897 14.103 3 13 3ZM3 4H13C13.552 4 14 4.449 14 5V5.201L8 8.432L2 5.201V5C2 4.449 2.448 4 3 4ZM13 12H3C2.448 12 2 11.552 2 11V6.337L7.763 9.44C7.837 9.48 7.919 9.5 8 9.5C8.081 9.5 8.163 9.48 8.237 9.44L14 6.337V11C14 11.552 13.552 12 13 12Z"/>
+                                    </svg>
+                                    <a href="mailto:sarah.oconnel@corklaw.ie">sarah.oconnel@corklaw.ie</a>
+                                </div>
+                                <div class="team-card-contacts-info">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" viewBox="0 0 24 24" 
+                                        stroke-width="1.5" stroke="currentColor" 
+                                        aria-hidden="true" data-slot="icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                                    </svg>
+                                    <a href="tel:21 123 4567">21 123 4567</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="team-card fade-in">
+                            <div class="team-inner-card">
+                                <div class="team-card-image">
+                                    <img src="/assets/images/uncropped-lawyer-2.webp" alt="Lawyer 2">
+                                </div>
+                                <div class="card-space">
+                                    <h4>Irene Thompson</h4>
+                                    <p class="team-card-label">Solicitor</p>
+                                    <p>
+                                        Irene specialises in family law, probate, and estate planning. With extensive experience supporting clients through sensitive and complex 
+                                        matters, she is known for her compassionate approach, attention to detail, and clear, practical advice.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="team-card-contacts card-space">
+                                <div class="team-card-contacts-info">
+                                    <svg 
+                                        viewBox="0 0 16 16" 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="currentColor">
+                                        <path d="M13 3H3C1.897 3 1 3.897 1 5V11C1 12.103 1.897 13 3 13H13C14.103 13 15 12.103 15 11V5C15 3.897 14.103 3 13 3ZM3 4H13C13.552 4 14 4.449 14 5V5.201L8 8.432L2 5.201V5C2 4.449 2.448 4 3 4ZM13 12H3C2.448 12 2 11.552 2 11V6.337L7.763 9.44C7.837 9.48 7.919 9.5 8 9.5C8.081 9.5 8.163 9.48 8.237 9.44L14 6.337V11C14 11.552 13.552 12 13 12Z"/>
+                                    </svg>
+                                    <a href="mailto:irene.thompson@corklaw.ie">irene.thompson@corklaw.ie</a>
+                                </div>
+                                <div class="team-card-contacts-info">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" viewBox="0 0 24 24" 
+                                        stroke-width="1.5" stroke="currentColor" 
+                                        aria-hidden="true" data-slot="icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                                    </svg>
+                                    <a href="tel:21 123 4567">21 123 4567</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="team-card fade-in">
+                            <div class="team-inner-card">
+                                <div class="team-card-image">
+                                    <img src="/assets/images/uncropped-lawyer-3.webp" alt="Lawyer 3">
+                                </div>
+                                <div class="card-space">
+                                    <h4>John O’Leary</h4>
+                                    <p class="team-card-label">Solicitor</p>
+                                    <p>
+                                        John focuses on property law, conveyancing, and commercial transactions. With a strong background in both residential and business matters, he 
+                                        provides structured, strategic guidance and is valued for his professionalism and reliability.
+                                    </p>
+                                </div>
+                            </div>
+                            
+                            <div class="team-card-contacts card-space">
+                                <div class="team-card-contacts-info">
+                                    <svg 
+                                        viewBox="0 0 16 16" 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="currentColor">
+                                        <path d="M13 3H3C1.897 3 1 3.897 1 5V11C1 12.103 1.897 13 3 13H13C14.103 13 15 12.103 15 11V5C15 3.897 14.103 3 13 3ZM3 4H13C13.552 4 14 4.449 14 5V5.201L8 8.432L2 5.201V5C2 4.449 2.448 4 3 4ZM13 12H3C2.448 12 2 11.552 2 11V6.337L7.763 9.44C7.837 9.48 7.919 9.5 8 9.5C8.081 9.5 8.163 9.48 8.237 9.44L14 6.337V11C14 11.552 13.552 12 13 12Z"/>
+                                    </svg>
+                                    <a href="mailto:john.oleary@corklaw.ie">john.oleary@corklaw.ie</a>
+                                </div>
+                                <div class="team-card-contacts-info">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" viewBox="0 0 24 24" 
+                                        stroke-width="1.5" stroke="currentColor" 
+                                        aria-hidden="true" data-slot="icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                                    </svg>
+                                    <a href="tel:21 123 4567">21 123 4567</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="team-card fade-in">
+                            <div class="team-inner-card">
+                                <div class="team-card-image">
+                                    <img src="/assets/images/uncropped-lawyer-4.webp" alt="Lawyer 4">
+                                </div>
+                                <div class="card-space">
+                                    <h4>Silvia O’Donnell</h4>
+                                    <p class="team-card-label">Solicitor</p>
+                                    <p>
+                                        Silvia advises clients on litigation, employment law, and dispute resolution. She is recognised for her thorough preparation, analytical mindset, 
+                                        and ability to deliver clear, confident representation in challenging legal matters.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="team-card-contacts card-space">
+                                <div class="team-card-contacts-info">
+                                    <svg 
+                                        viewBox="0 0 16 16" 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="currentColor">
+                                        <path d="M13 3H3C1.897 3 1 3.897 1 5V11C1 12.103 1.897 13 3 13H13C14.103 13 15 12.103 15 11V5C15 3.897 14.103 3 13 3ZM3 4H13C13.552 4 14 4.449 14 5V5.201L8 8.432L2 5.201V5C2 4.449 2.448 4 3 4ZM13 12H3C2.448 12 2 11.552 2 11V6.337L7.763 9.44C7.837 9.48 7.919 9.5 8 9.5C8.081 9.5 8.163 9.48 8.237 9.44L14 6.337V11C14 11.552 13.552 12 13 12Z"/>
+                                    </svg>
+                                    <a href="mailto:silvia.odonnell@corklaw.ie">silvia.odonnell@corklaw.ie</a>
+                                </div>
+                                <div class="team-card-contacts-info">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" viewBox="0 0 24 24" 
+                                        stroke-width="1.5" stroke="currentColor" 
+                                        aria-hidden="true" data-slot="icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                                    </svg>
+                                    <a href="tel:21 123 4567">21 123 4567</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card 5 -->
+                        <div class="team-card fade-in">
+                            <div class="team-inner-card">
+                                <div class="team-card-image">
+                                    <img src="/assets/images/uncropped-lawyer-5.webp" alt="Lawyer 5">
+                                </div>
+                                <div class="card-space">
+                                    <h4>Steven Goodman</h4>
+                                    <p class="team-card-label">Solicitor</p>
+                                    <p>
+                                        Steven specialises in commercial law, contracts, and business advisory services. With a practical and results-driven approach, he supports clients in 
+                                        navigating complex legal frameworks with clarity and confidence.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="team-card-contacts card-space">
+                                <div class="team-card-contacts-info">
+                                    <svg 
+                                        viewBox="0 0 16 16" 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="currentColor">
+                                        <path d="M13 3H3C1.897 3 1 3.897 1 5V11C1 12.103 1.897 13 3 13H13C14.103 13 15 12.103 15 11V5C15 3.897 14.103 3 13 3ZM3 4H13C13.552 4 14 4.449 14 5V5.201L8 8.432L2 5.201V5C2 4.449 2.448 4 3 4ZM13 12H3C2.448 12 2 11.552 2 11V6.337L7.763 9.44C7.837 9.48 7.919 9.5 8 9.5C8.081 9.5 8.163 9.48 8.237 9.44L14 6.337V11C14 11.552 13.552 12 13 12Z"/>
+                                    </svg>
+                                    <a href="mailto:steven.goodman@corklaw.ie">steven.goodman@corklaw.ie</a>
+                                </div>
+                                <div class="team-card-contacts-info">
+                                    <svg 
+                                        xmlns="http://www.w3.org/2000/svg" 
+                                        fill="none" viewBox="0 0 24 24" 
+                                        stroke-width="1.5" stroke="currentColor" 
+                                        aria-hidden="true" data-slot="icon">
+                                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/>
+                                    </svg>
+                                    <a href="tel:21 123 4567">21 123 4567</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="container footer fade-in">
+            <div class="main-footer">
+                <div class="footer-branding">
+                    <img src="/assets/logos/corkLawLogoTransparent.png" alt="">
+                    <p>Delivering reliable legal expertise across Cork, Cork City Law is committed to protecting your interests with clarity and professionalism.</p>
+                </div>
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <div>
+                        <ul class="footer-service-list">
+                            <li class="footer-service-item"><a href="#">Family Law</a></li>
+                            <li class="footer-service-item"><a href="#">Property Law</a></li>
+                            <li class="footer-service-item"><a href="#">Corporate Law</a></li>
+                            <li class="footer-service-item"><a href="#">Employment Law</a></li>
+                            <li class="footer-service-item"><a href="#">Personal Injury</a></li>
+                            <li class="footer-service-item"><a href="#">Commercial Law</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-quick-links">
+                    <h4>Quick Links</h4>
+                    <div>
+                        <ul class="footer-quick-links-list">
+                            <li class="footer-service-item"><a href="#">Home</a></li>
+                            <li class="footer-service-item"><a href="#">About</a></li>
+                            <li class="footer-service-item"><a href="#">Team</a></li>
+                            <li class="footer-service-item"><a href="#">Practice</a></li>
+                            <li class="footer-service-item"><a href="#">Contact</a></li>
+                            <li class="footer-service-item"><a href="#">Privacy Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-signature">
+                <p>EG Web Dev | <i>© 2026 All Rights Reserverd</i></p>
+            </div>
+        </footer>
+    </body>
+</html>
