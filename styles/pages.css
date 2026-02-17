@@ -168,6 +168,20 @@
 
 /* ----------------------- TEAM PAGE --------------------- */
 
+.team-header-section {
+    background-image: 
+        linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.65)),
+        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/team-page-bg.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.team-header h1 {
+    color: white;
+}
+
 .team {
     display: flex;
     flex-direction: column;
@@ -177,12 +191,12 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    padding-bottom: 2rem;
     text-align: center;
 }
 
 .team-header-support {
     font-weight: 500;
+    color: white;
 }
 
 .team-info {
@@ -266,11 +280,10 @@
 
 /* ----------------------- PRACTICE PAGE --------------------- */
 
-.practice-page-header-section,
-.contact-page-header-section {
+.practice-page-header-section {
     background-image: 
         linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.65)),
-        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/contact-page-bg.webp");
+        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/practice-page-bg.webp");
 
     background-size: cover;
     background-position: center;
@@ -292,6 +305,16 @@
 }
 
 /* ----------------------- CONTACT PAGE --------------------- */
+
+.contact-page-header-section {
+    background-image: 
+        linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.65)),
+        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/contact-page-bg.webp");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
 .urgent-contact-strip {
     background-color: #1E1E1E;
@@ -429,6 +452,108 @@
   margin: 0.5rem 0;
 }
 
+/* ----------------------- SINGLE POST PAGE --------------------- */
+
+.family-law {
+    background-image: 
+        linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.65)),
+        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/family-law.webp");
+
+    background-size: cover;
+    background-position: 50% 25%;
+    background-repeat: no-repeat;
+}
+
+.single-post-intro-section {
+    background-color: #f1f1f1;
+}
+
+.single-post-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.single-post-header h1,
+.single-post-header p {
+    color: white;
+}
+
+.single-post-header p {
+    font-weight: 500;
+}
+
+.single-post-intro-section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.single-post-intro-list-label {
+    font-weight: 500;
+}
+
+.single-post-intro-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.intro-list > li{
+    list-style: disc;
+    font-family: "Inter";
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.intro-list {
+    padding-left: 2rem;
+}
+
+.post-article {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.post-navigation-section {
+    background-color: #1E1E1E;
+    padding: 1rem;
+}
+
+.post-navigation {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.post-navigation p {
+    color: white;
+    font-weight: 500;
+}
+
+.post-navigation a {
+    font-size: 1.2rem;
+}
+
+.light-navigation {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.light-navigation h3 {
+    padding-bottom: 1rem;
+}
+
+
+
 /* ----------------- EDGE CASE: small mobile screens ----------------- */
 
 @media (max-width: 400px) { 
@@ -466,6 +591,12 @@
         border-top-right-radius: 0;
     }
 
+    .team-card-contacts {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
     .team-card {
         gap: 0;
     }
@@ -477,6 +608,20 @@
     .what-happens-next-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .single-post-intro-section {
+        display: flex;
+        flex-direction: row;
+        gap: 4rem;
+    }
+
+    .single-post-intro-para {
+        flex: 1;
+    }
+
+    .single-post-intro-list {
+        flex: 1;
     }
 
 }
@@ -499,12 +644,25 @@
         border-top-right-radius: 10px;
     }
 
+    .team-card-contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+    }
+
     .faq {
         display: flex;
         flex-direction: row;
         gap: 10rem;
     }
+    
+    .single-post-intro-list {
+        align-items: center;
+    }
 
+    .post-navigation a {
+        font-size: 1.3rem;
+    }
     
 }
 
@@ -539,6 +697,13 @@
         gap: 20rem;
     }
 
+    .team-card-contacts {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+
 }
 
 /* ---------------------------- WIDE DESKTOP ------------------------------- */
@@ -561,6 +726,7 @@
     .team-card-image img {
         height: 300px;
         width: 1200px;
+        border-top-right-radius: 0;
     }
 
     .faq {
