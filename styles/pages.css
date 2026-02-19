@@ -464,6 +464,56 @@
     background-repeat: no-repeat;
 }
 
+.property-law {
+    background-image: 
+        linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.65)),
+        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/property-law.webp");
+
+    background-size: cover;
+    background-position: 50% 45%;
+    background-repeat: no-repeat;
+}
+
+.employment-law {
+    background-image: 
+        linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.65)),
+        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/employment-law.webp");
+
+    background-size: cover;
+    background-position: 50% 65%;
+    background-repeat: no-repeat;
+}
+
+.personal-injury {
+    background-image: 
+        linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.65)),
+        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/personal-injury.webp");
+
+    background-size: cover;
+    background-position: 50% 65%;
+    background-repeat: no-repeat;
+}
+
+.commercial-law {
+    background-image: 
+        linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.65)),
+        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/commercial-law.webp");
+
+    background-size: cover;
+    background-position: 50% 75%;
+    background-repeat: no-repeat;
+}
+
+.corporate-law {
+    background-image: 
+        linear-gradient(rgba(30, 30, 30, 0.85), rgba(30, 30, 30, 0.65)),
+        url("https://abugelis.github.io/CorkCityLawGroup/assets/images/corporate-law.webp");
+
+    background-size: cover;
+    background-position: 50% 48%;
+    background-repeat: no-repeat;
+}
+
 .single-post-intro-section {
     background-color: #f1f1f1;
 }
@@ -546,6 +596,15 @@
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+.light-navigation a {
+    transition: text-decoration 0.3s ease, color 0.3s ease;
+}
+
+.light-navigation a:hover {
+    color: #006666;
+    text-decoration: underline;
 }
 
 .light-navigation h3 {
@@ -656,8 +715,8 @@
         gap: 10rem;
     }
     
-    .single-post-intro-list {
-        align-items: center;
+    .single-post-intro-section {
+        gap: 12rem;
     }
 
     .post-navigation a {
@@ -703,6 +762,9 @@
         gap: 2rem;
     }
 
+    .single-post-intro-section {
+        gap: 20rem;
+    }
 
 }
 
@@ -733,4 +795,7 @@
         gap: 35rem;
     }
 
+    .single-post-intro-section {
+        gap: 30rem;
+    }
 }

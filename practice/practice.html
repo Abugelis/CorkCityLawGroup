@@ -23,8 +23,9 @@
     </head>
 
     <body>
-        <!-- Header -->
+         <!-- Header -->
         <header class="site-header">
+            <div class="nav-overlay"></div>
             <div class="container header-inner">
 
                 <!-- Logo -->
@@ -38,7 +39,21 @@
                         <li><a href="../index.html" class="nav-link">Home</a></li>
                         <li><a href="../about/about.html" class="nav-link">About</a></li>
                         <li><a href="../team/team.html" class="nav-link">Team</a></li>
-                        <li><a href="../practice/practice.html" class="nav-link">Practice</a></li>
+                        <li class="has-submenu">
+                            <div class="nav-item-with-toggle">
+                                <a href="../practice/practice.html" class="nav-link">Practice</a>
+                                <button class="submenu-toggle" aria-expanded="false">+</button>
+                            </div>
+
+                            <ul class="sub-nav-list">
+                                <li><a href="../practice/commercial-law.html" class="sub-nav-link first-link">Commercial Law</a></li>
+                                <li><a href="../practice/corporate-law.html" class="sub-nav-link">Corporate Law</a></li>
+                                <li><a href="../practice/employment-law.html" class="sub-nav-link">Employment Law</a></li>
+                                <li><a href="../practice/family-law.html" class="sub-nav-link">Family Law</a></li>
+                                <li><a href="../practice/personal-injury.html" class="sub-nav-link">Personal Injury</a></li>
+                                <li><a href="../practice/property-law.html" class="sub-nav-link">Property Law</a></li>
+                            </ul>
+                        </li>    
                         <li><a href="../contact/contact.html" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
@@ -162,7 +177,7 @@
                         Legal matters can be complex and stressful, but you don’t have to face them alone. Our team at Cork City Law is ready to listen, advise, and 
                         guide you every step of the way. Contact us now for friendly, professional support.
                     </p>
-                    <a class="btn btn-main" href="#">book an appointment</a>
+                    <a class="btn btn-main" href="../contact/contact.html">book an appointment</a>
                 </div>
             </section>
             <!-- Testimonials-->
