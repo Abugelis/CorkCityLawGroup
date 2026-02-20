@@ -144,6 +144,10 @@ ul, li {
     transition: background-color 0.3s ease;
 }
 
+.btn {
+    touch-action: manipulation;
+}
+
 .btn:hover {
     background-color: #006666;
 }
@@ -176,7 +180,7 @@ ul, li {
 
 .logo img {
     height: 45px;
-    width: auto;
+    width: 150px;
 }
 
 /* Toggle visible on mobile */
